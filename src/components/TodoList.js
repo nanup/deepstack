@@ -2,25 +2,14 @@ import "./Todo.css";
 
 import TodoListItem from "./TodoListItem";
 
-const DUMMY_TODO_LIST = [
-  {
-    todo: "Lorem Ipsum",
-    id: 201,
-  },
-  {
-    todo: "Ormad Tkakdg",
-    id: 202,
-  },
-];
-
-const TodoList = () => {
+const TodoList = (props) => {
   return (
-    <ul>
-      {DUMMY_TODO_LIST.map((todoItem) => {
+    <ul className="todolist">
+      {props.todoList.map((todoItem) => {
         return (
           <TodoListItem
-            id={todoItem.id}
-            key={todoItem.id}
+            onDelete={props.onDelete.bind(null, todoItem._id)}
+            key={todoItem._id}
             todoItem={todoItem.todo}
           />
         );

@@ -1,0 +1,14 @@
+.form {
+  margin-top: 2.5rem;
+}
+
+.input {
+  border-radius: 15px;
+  padding-inline-start: 10px;
+  width: 10rem;
+}
+
+.button {
+  border-radius: 15px;
+  width: 5rem;
+}
