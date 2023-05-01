@@ -6,6 +6,7 @@ import Input from "./components/Input";
 import TodoContext from "./store/todo-context";
 import TodoList from "./components/TodoList";
 
+// Start
 function App() {
   const [todoList, setTodoList] = useState([]);
 
